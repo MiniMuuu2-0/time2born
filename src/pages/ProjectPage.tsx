@@ -29,11 +29,11 @@ function ProjectPage() {
       <div className="screen-layout split-layout">
         <article className="feature-card emphasis-card" data-reveal>
           <span className="tag">Il bisogno</span>
-          <h2>Quando il percorso e complesso, la protezione deve essere chiara e vicina.</h2>
+          <h2>Bisogno di sicurezza e certezza di essere protetti in caso di problemi.</h2>
           <p>
-            Ogni fase della PMA puo portare nuove spese, nuove attese e nuove decisioni.
-            Per questo serve una soluzione che non si limiti a rimborsare, ma accompagni
-            davvero la coppia.
+            Il progetto parte da qui: dare maggiore serenita a chi vuole iniziare a cercare
+            una gravidanza, offrendo una protezione leggibile e un supporto piu chiaro fin
+            dall'inizio del percorso.
           </p>
 
           <ul className="bullet-list">

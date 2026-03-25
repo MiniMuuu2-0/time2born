@@ -1,8 +1,8 @@
 export const homeMetrics = [
   {
     label: "Per chi",
-    value: "Coppie in PMA",
-    text: "Una proposta dedicata a chi affronta fertilita assistita, costi elevati e tempi incerti.",
+    value: "Coppie che vogliono iniziare a cercare di avere una gravidanza",
+    text: "E vogliono sicurezza.",
   },
   {
     label: "Cosa offre",
@@ -28,7 +28,7 @@ export const pagePreviews = [
     href: "/progetto",
     label: "Progetto",
     title: "Il bisogno da cui parte",
-    text: "Perche la PMA richiede una protezione economica, emotiva e organizzativa.",
+    text: "Bisogno di sicurezza e certezza di essere protetti in caso di problemi.",
   },
   {
     href: "/servizi",
@@ -69,9 +69,7 @@ export const relationshipPoints = [
 ];
 
 export const customerSegments = [
-  "Coppie che stanno valutando o hanno appena iniziato un percorso PMA.",
-  "Coppie che affrontano trattamenti con costi elevati e bisogno di maggiore tutela.",
-  "Persone che cercano una soluzione piu chiara e dedicata rispetto a coperture generiche.",
+  "Coppie che vogliono iniziare a cercare di avere una gravidanza e vogliono sicurezza.",
 ];
 
 export const projectBenefits = [
@@ -99,33 +97,10 @@ export const servicePillars = [
   },
 ];
 
-export const serviceJourney = [
-  {
-    step: "01",
-    title: "Primo orientamento",
-    text: "Analisi del bisogno, delle spese previste e delle possibili tutele attivabili.",
-  },
-  {
-    step: "02",
-    title: "Attivazione del percorso",
-    text: "Definizione della copertura e avvio dell'assistenza dedicata alla coppia.",
-  },
-  {
-    step: "03",
-    title: "Gestione del trattamento",
-    text: "Supporto su visite, esami, monitoraggi, rimborsi e passaggi organizzativi.",
-  },
-  {
-    step: "04",
-    title: "Continuita per la famiglia",
-    text: "Estensioni e servizi di supporto dopo la nascita, per accompagnare i primi anni.",
-  },
-];
-
 export const serviceExtras = [
   "Una proposta verticale, costruita su un bisogno preciso.",
   "Pensata per dare chiarezza in un momento complesso.",
-  "Da impostare con un percorso che continua oltre il trattamento.",
+  "Con orientamento dedicato anche verso un percorso di adozione.",
 ];
 
 export const serviceDetailBlocks = [
@@ -146,6 +121,11 @@ export const serviceDetailBlocks = [
     ],
   },
 ];
+
+export const serviceAdoptionSupport = {
+  title: "Orientamento verso un percorso di adozione",
+  text: "Orientamento verso un percorso di adozione nel caso di fallimento della FIV, con organizzazioni specializzate in partnership con noi.",
+};
 
 export const modelBlocks = [
   {

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import {
+  serviceAdoptionSupport,
   serviceDetailBlocks,
   serviceExtras,
-  serviceJourney,
   servicePillars,
 } from "../data/siteContent";
 
@@ -49,15 +49,11 @@ function ServicesPage() {
           ))}
         </div>
 
-        <div className="journey-grid">
-          {serviceJourney.map((item) => (
-            <article className="journey-card" key={item.step} data-reveal>
-              <span>{item.step}</span>
-              <h3>{item.title}</h3>
-              <p>{item.text}</p>
-            </article>
-          ))}
-        </div>
+        <article className="feature-card emphasis-card" data-reveal>
+          <span className="tag">Orientamento dedicato</span>
+          <h2>{serviceAdoptionSupport.title}</h2>
+          <p>{serviceAdoptionSupport.text}</p>
+        </article>
 
         <article className="feature-card service-cta-card" data-reveal>
           <span className="tag">Consulenza</span>
