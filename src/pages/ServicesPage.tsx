@@ -1,4 +1,10 @@
-import { serviceExtras, serviceJourney, servicePillars } from "../data/siteContent";
+import { Link } from "react-router-dom";
+import {
+  serviceDetailBlocks,
+  serviceExtras,
+  serviceJourney,
+  servicePillars,
+} from "../data/siteContent";
 
 function ServicesPage() {
   return (
@@ -6,11 +12,10 @@ function ServicesPage() {
       <div className="screen-head" data-reveal>
         <div>
           <p className="eyebrow">Servizi</p>
-          <h1>Copertura, supporto e continuita: la proposta va oltre il trattamento.</h1>
+          <h1>Un supporto che accompagna la coppia prima, durante e dopo la PMA.</h1>
           <p className="lead">
-            La pagina servizi deve mostrare subito cosa si ottiene davvero, senza testo
-            dispersivo: quattro pilastri chiari e un percorso leggibile dall'inizio alla
-            crescita della famiglia.
+            Time2Born combina tutela economica, assistenza pratica e supporto specialistico
+            per rendere il percorso piu chiaro, piu sostenibile e meno solitario.
           </p>
         </div>
 
@@ -31,6 +36,19 @@ function ServicesPage() {
           ))}
         </div>
 
+        <div className="canvas-grid canvas-grid-2">
+          {serviceDetailBlocks.map((block) => (
+            <article className="canvas-card accent-card" key={block.title} data-reveal>
+              <h3>{block.title}</h3>
+              <ul className="compact-list">
+                {block.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+
         <div className="journey-grid">
           {serviceJourney.map((item) => (
             <article className="journey-card" key={item.step} data-reveal>
@@ -40,6 +58,23 @@ function ServicesPage() {
             </article>
           ))}
         </div>
+
+        <article className="feature-card service-cta-card" data-reveal>
+          <span className="tag">Consulenza</span>
+          <h2>Le tutele si capiscono meglio quando vengono lette sul percorso reale della coppia.</h2>
+          <p>
+            La consulenza iniziale serve proprio a questo: chiarire cosa puo rientrare nel
+            servizio, cosa va definito meglio e quale impostazione ha piu senso.
+          </p>
+          <div className="hero-actions">
+            <Link className="button button-primary" to="/consulenza">
+              Richiedi una consulenza
+            </Link>
+            <Link className="button button-secondary" to="/modello">
+              Vedi copertura e sostenibilita
+            </Link>
+          </div>
+        </article>
       </div>
     </section>
   );

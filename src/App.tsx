@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import ConsultationPage from "./pages/ConsultationPage";
 import SiteLayout from "./components/SiteLayout";
 import ComingSoonPage from "./pages/ComingSoonPage";
 import HomePage from "./pages/HomePage";
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route element={<SiteLayout />}>
         <Route index element={<HomePage />} />
+        <Route path="/consulenza" element={<ConsultationPage />} />
         <Route path="/progetto" element={<ProjectPage />} />
         <Route path="/servizi" element={<ServicesPage />} />
         <Route path="/modello" element={<ModelPage />} />

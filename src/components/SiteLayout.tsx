@@ -5,7 +5,7 @@ const navItems = [
   { to: "/", label: "Home", end: true },
   { to: "/progetto", label: "Progetto" },
   { to: "/servizi", label: "Servizi" },
-  { to: "/modello", label: "Modello" },
+  { to: "/modello", label: "Copertura" },
   { to: "/team", label: "Team" },
 ];
 
@@ -99,8 +99,8 @@ function SiteLayout() {
             ))}
           </nav>
 
-          <NavLink className="nav-cta" to="/modello" onClick={() => setMenuOpen(false)}>
-            Vedi il canvas
+          <NavLink className="nav-cta" to="/consulenza" onClick={() => setMenuOpen(false)}>
+            Richiedi una consulenza
           </NavLink>
         </div>
       </header>
@@ -110,9 +110,37 @@ function SiteLayout() {
       </main>
 
       <footer className="site-footer">
-        <p>time2born</p>
-        <p>Concept assicurativo per PMA, supporto e primi anni della famiglia.</p>
-        <p>&copy; {year} Time2Born</p>
+        <div className="footer-grid">
+          <div className="footer-column">
+            <p className="footer-brand">time2born</p>
+            <p>
+              Protezione economica e supporto dedicato per chi affronta un percorso PMA.
+            </p>
+          </div>
+
+          <div className="footer-column">
+            <p className="footer-title">Percorso</p>
+            <div className="footer-links">
+              {navItems.map((item) => (
+                <NavLink key={item.to} to={item.to} end={item.end}>
+                  {item.label}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+
+          <div className="footer-column">
+            <p className="footer-title">Prossimo passo</p>
+            <p>
+              La consulenza iniziale serve a capire il bisogno della coppia e il possibile
+              perimetro del servizio.
+            </p>
+            <NavLink className="footer-cta" to="/consulenza">
+              Richiedi una consulenza
+            </NavLink>
+          </div>
+        </div>
+        <p className="footer-bottom">&copy; {year} Time2Born</p>
       </footer>
     </div>
   );

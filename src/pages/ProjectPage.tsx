@@ -12,10 +12,10 @@ function ProjectPage() {
       <div className="screen-head" data-reveal>
         <div>
           <p className="eyebrow">Progetto</p>
-          <h1>Il problema non e solo medico: e economico, emotivo e organizzativo.</h1>
+          <h1>La PMA mette alla prova non solo il corpo, ma anche equilibrio e stabilita.</h1>
           <p className="lead">
-            Questa pagina chiarisce subito perche il concept ha senso: intercetta un bisogno
-            forte, concreto e facilmente percepibile da chi vive il percorso PMA.
+            Time2Born parte da un bisogno concreto: aiutare chi affronta la fertilita
+            assistita a gestire costi, incertezza e carico emotivo con un supporto dedicato.
           </p>
         </div>
 
@@ -28,11 +28,12 @@ function ProjectPage() {
 
       <div className="screen-layout split-layout">
         <article className="feature-card emphasis-card" data-reveal>
-          <span className="tag">Perche conta</span>
-          <h2>Chi affronta la fertilita assistita cerca protezione, non solo informazioni.</h2>
+          <span className="tag">Il bisogno</span>
+          <h2>Quando il percorso e complesso, la protezione deve essere chiara e vicina.</h2>
           <p>
-            Time2Born parte dal vissuto della coppia: paura del fallimento, pressione dei costi
-            e bisogno di sentirsi seguiti da qualcuno che capisca davvero il momento.
+            Ogni fase della PMA puo portare nuove spese, nuove attese e nuove decisioni.
+            Per questo serve una soluzione che non si limiti a rimborsare, ma accompagni
+            davvero la coppia.
           </p>
 
           <ul className="bullet-list">
@@ -44,7 +45,7 @@ function ProjectPage() {
 
         <div className="canvas-grid canvas-grid-2">
           <article className="canvas-card" data-reveal>
-            <h3>Value proposition</h3>
+            <h3>Valore offerto</h3>
             <ul className="compact-list">
               {valuePropositions.map((item) => (
                 <li key={item}>{item}</li>
@@ -53,7 +54,7 @@ function ProjectPage() {
           </article>
 
           <article className="canvas-card" data-reveal>
-            <h3>Customer relationship</h3>
+            <h3>Relazione con il cliente</h3>
             <ul className="compact-list">
               {relationshipPoints.map((item) => (
                 <li key={item}>{item}</li>
@@ -62,7 +63,7 @@ function ProjectPage() {
           </article>
 
           <article className="canvas-card" data-reveal>
-            <h3>Customer segments</h3>
+            <h3>Persone a cui si rivolge</h3>
             <ul className="compact-list">
               {customerSegments.map((item) => (
                 <li key={item}>{item}</li>
@@ -71,10 +72,11 @@ function ProjectPage() {
           </article>
 
           <article className="canvas-card accent-card" data-reveal>
-            <h3>Percezione finale</h3>
+            <h3>Perche funziona</h3>
             <p>
-              Il concept funziona quando il cliente capisce in pochi secondi che qui non si
-              parla di una polizza generica, ma di una protezione costruita sul suo percorso.
+              Time2Born risponde a un bisogno specifico con un servizio piu leggibile di una
+              polizza generica: dedicato, comprensibile e costruito attorno al percorso reale
+              della coppia.
             </p>
           </article>
         </div>

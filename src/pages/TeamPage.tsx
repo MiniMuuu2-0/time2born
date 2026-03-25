@@ -1,15 +1,24 @@
 import { teamLead, teamMembers, teamWorkflow } from "../data/siteContent";
 
 function TeamPage() {
+  const teamRoster = [
+    {
+      role: teamLead.role,
+      name: teamLead.name,
+      text: teamLead.text,
+    },
+    ...teamMembers,
+  ];
+
   return (
     <section className="screen-page">
       <div className="screen-head" data-reveal>
         <div>
           <p className="eyebrow">Team</p>
-          <h1>Dietro il concept c'e una squadra che copre visione, execution e relazione.</h1>
+          <h1>Un team multidisciplinare per trasformare Time2Born in un servizio concreto.</h1>
           <p className="lead">
-            La pagina team deve trasmettere affidabilita: non solo idee, ma ruoli chiari per
-            costruire prodotto, canali, sostenibilita economica e gestione clienti.
+            Il progetto riunisce competenze diverse per sviluppare il prodotto, costruire le
+            partnership, seguire i clienti e sostenere la crescita del servizio.
           </p>
         </div>
 
@@ -20,23 +29,18 @@ function TeamPage() {
         </div>
       </div>
 
-      <div className="screen-layout split-layout">
-        <article className="feature-card lead-feature" data-reveal>
-          <span className="tag">{teamLead.role}</span>
-          <h2>{teamLead.name}</h2>
-          <p>{teamLead.text}</p>
-
-          <div className="lead-note">
-            <strong>Ruolo della pagina</strong>
-            <p>
-              Rafforza la credibilita del progetto e fa vedere che il modello puo essere
-              attivato davvero, non solo raccontato bene.
-            </p>
-          </div>
+      <div className="screen-layout stack-layout">
+        <article className="canvas-card accent-card" data-reveal>
+          <h2>Competenze diverse, stesso livello di responsabilita nel progetto.</h2>
+          <p>
+            Time2Born cresce attraverso un lavoro condiviso tra sviluppo, finanza,
+            clienti, marketing, vendite e coordinamento generale. La forza del team sta
+            nella complementarita dei ruoli, non in una gerarchia esposta nella pagina.
+          </p>
         </article>
 
         <div className="team-card-grid">
-          {teamMembers.map((member) => (
+          {teamRoster.map((member) => (
             <article className="team-panel" key={member.name} data-reveal>
               <span>{member.role}</span>
               <h3>{member.name}</h3>
